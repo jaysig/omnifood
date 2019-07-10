@@ -1,5 +1,12 @@
 .container {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #fff;
+    height: 200px;
+    width: 500px;
 }
 
 
