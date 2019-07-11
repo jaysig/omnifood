@@ -7,14 +7,66 @@
 
 .container div {
     flex-basis: 200px;
-    flex: 1 1 25%; 
+    flex: 1 1 25%;
     margin: 0;
 }
+
 /* Flex: Flex-grow Flex-shrink Flex-basis */
 
-.container div:nth-child(2) {
+.container div:nth-child(2) {}
 
+.container div:nth-child(3) {}
+
+.grid {
+    display: flex;
 }
 
-.container div:nth-child(3) {
+.gutters {
+    margin: 20px;
+}
+
+.gutters>.cell {
+    padding: 10px 0 0 10px;
+}
+
+.cell {
+    flex: 1;
+}
+
+.cell>div {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    padding: 10px;
+}
+
+.large {
+    flex-grow: 3;
+}
+.grid div {
+    padding: 10px 0 0 10px;
+}
+
+.grid div div {
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+}
+
+.half {
+    flex-basis: 50%;
+}
+
+.third {
+    flex-basis: 33.33%;
+}
+
+.fourth {
+    flex-basis: 25%;
+}
+
+.fifth {
+    flex-basis: 20%;
+}
+
+.sixth {
+    flex-basis: 16.66%;
 }
